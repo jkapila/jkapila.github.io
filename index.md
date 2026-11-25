@@ -11,9 +11,6 @@ Data scientist and researcher. Essays and consulting live at [jitinkapila.com](h
 
 - **[mltreelib](https://jkapila.github.io/mltreelib/)** — tree-based ML in a Rust core with a Python API. Missing data is first class, with no scikit-learn dependency. [Source](https://github.com/jkapila/mltreelib)
 - **[featuregen](https://github.com/jkapila/featuregen)** — feature generation for large-scale forecasting.
-- **[pygemodels](https://github.com/jkapila/pygemodels)** — growth and epidemiology models in Python.
-- **[DAR](https://github.com/jkapila/DAR)** — Distribution Assertive Regression.
-- **[flexkern](https://github.com/jkapila/flexkern)** — flexible kernel-based clustering.
 
 ## Elsewhere
 
