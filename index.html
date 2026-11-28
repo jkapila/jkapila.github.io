@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jitin Kapila — Open Source</title>
+<meta name="description" content="Jitin Kapila: founder and Chief AI Officer at Kriyalytics, AI architect. Open-source ML libraries and research code.">
+<link rel="canonical" href="https://jkapila.github.io/">
+<meta name="google-site-verification" content="LCgS95ZWOY6LRvj9dPu6KyL4JyDeQ2yL9tf53rq2jgY">
+<script>
+try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}
+</script>
+<style>
+:root{--bg:#fff;--fg:#1a1a1a;--dim:#5c6370;--line:#e4e6eb;--card:#f7f8fa;--accent:#0a66c2}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#121417;--fg:#e8eaed;--dim:#9aa0a6;--line:#2a2e35;--card:#1a1d22;--accent:#6cb2ff}}
+:root[data-theme=dark]{--bg:#121417;--fg:#e8eaed;--dim:#9aa0a6;--line:#2a2e35;--card:#1a1d22;--accent:#6cb2ff}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:3rem}
+header b{font-size:1rem}
+#theme{background:none;border:1px solid var(--line);color:var(--fg);border-radius:8px;width:2.2rem;height:2.2rem;font-size:1.1rem;cursor:pointer}
+#theme:hover{border-color:var(--accent)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:64rem;margin:0 auto;padding:4rem 1rem}
+h1{font-size:1.9rem;margin:0 0 .5rem}
+h2{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin:2.5rem 0 .75rem}
+p{margin:0}.about{columns:2 24rem;column-gap:2.5rem}.about p{break-inside:avoid-column}.dim{color:var(--dim)}
+a{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:.75rem}
+.card{display:block;padding:1rem 1.1rem;background:var(--card);border:1px solid var(--line);border-radius:10px;text-decoration:none;color:inherit}
+.card:hover{border-color:var(--accent)}
+.card b{display:block;color:var(--accent)}
+footer{margin-top:3rem;color:var(--dim);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header><b>jkapila.github.io</b><button id="theme" type="button" aria-label="Toggle light and dark mode">◐</button></header>
+<h1>Jitin Kapila</h1>
+<p class="dim">Founder and Chief AI Officer at <a href="https://kriyalytics.com/">Kriyalytics</a>. AI architect. Open-source ML code.</p>
+
+<h2>About</h2>
+<div class="about">
+<p>I founded Kriyalytics, an AI consulting and implementation company for manufacturing, industrial, mining, logistics, and oil and gas. My current focus is physical AI and IoT enablement: getting models to work on real machines and real sensor data.</p>
+<p style="margin-top:.75rem">Before this I worked as an AI solution architect and as an embedded AI CTO for client companies. Across those roles I kept seeing the same gap: building the model is the easy part, and explaining it to the business is where projects stall.</p>
+<p style="margin-top:.75rem">That gap is why I still write open-source code. <a href="https://jkapila.github.io/mltreelib/">mltreelib</a> is my attempt to close it: models that handle messy data as it is and produce results a business can read and trust. More research packages and runnable snippets from my writing will land here.</p>
+<p style="margin-top:.75rem">Essays are on <a href="https://www.jitinkapila.com/">jitinkapila.com</a>.</p>
+</div>
+
+<h2>Projects</h2>
+<div class="grid">
+<a class="card" href="https://jkapila.github.io/mltreelib/"><b>mltreelib</b>Tree-based ML in a Rust core with a Python API. Missing data is first class, with no scikit-learn dependency.</a>
+<a class="card" href="https://github.com/jkapila/featuregen"><b>featuregen</b>Feature generation for large-scale forecasting.</a>
+</div>
+
+<footer><a href="https://www.jitinkapila.com/">Website</a> · <a href="https://kriyalytics.com/">Kriyalytics</a> · <a href="https://github.com/jkapila">GitHub</a> · <a href="https://github.com/jkapila/mltreelib">mltreelib source</a></footer>
+</main>
+<script>
+document.getElementById("theme").onclick=function(){
+var d=document.documentElement,dark=d.dataset.theme?d.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;
+d.dataset.theme=dark?"light":"dark";
+try{localStorage.setItem("theme",d.dataset.theme)}catch(e){}};
+</script>
+</body>
+</html>
